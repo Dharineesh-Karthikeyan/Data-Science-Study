@@ -1,5 +1,4 @@
-# 📦 dbt (Data Build Tool) – Complete Guide for Data Science Interviews
-
+# 📦 dbt (Data Build Tool) 
 ---
 
 ## 🚀 What is dbt?
@@ -67,7 +66,6 @@ my_project/
 
 Follow these steps to set up your first dbt project using the CLI and connect it to your data warehouse.
 
----
 
 ### ✅ 1. Install dbt-core (with your adapter)
 
@@ -83,8 +81,6 @@ pip install dbt-core
 # pip install dbt-bigquery
 # pip install dbt-redshift
 ```
-
----
 
 ### ✅ 2. Initialize a New Project
 
