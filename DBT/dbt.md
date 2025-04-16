@@ -105,7 +105,7 @@ dbt debug
 ## 🗂️ Common `.yml` Files in dbt Projects
 
 | File Name         | Purpose                                                                 |
-|-------------------|--------------------|-------------------------------------------------------------------------|
+|-------------------|--------------------------------------------------------------------------|
 | `dbt_project.yml` | Main config: project name, model paths, default materializations       |
 | `profiles.yml`    | Stores DB connection settings (in `~/.dbt/`)                           |
 | `schema.yml`      | Define model tests, column descriptions, relationships, docs           |
