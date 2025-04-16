@@ -64,10 +64,7 @@ my_project/
 
 ## ⚙️ Setting Up Your dbt Project (with dbt-core)
 
-Follow these steps to set up your first dbt project using the CLI and connect it to your data warehouse.
-
-
-### ✅ 1. Install dbt-core (with your adapter)
+✅ 1. Install dbt-core (with your adapter)
 
 Install dbt and the appropriate adapter for your data warehouse:
 
@@ -82,20 +79,18 @@ pip install dbt-core
 # pip install dbt-redshift
 ```
 
-### ✅ 2. Initialize a New Project
+✅ 2. Initialize a New Project
 
 ```bash
 dbt init my_project
 ```
-
-###  ✅ 3. Set up profiles.yml config file
+✅ 3. Set up profiles.yml config file
 You will be prompted to:
 - Choose a warehouse adapter
 - Enter connection details (host, port, schema (OR) oauth, service account etc.)
 - This will be the profile in `profiles.yml` for our connection.
 
-
-### ✅ 4. Test Your Connection
+✅ 4. Test Your Connection
 
 Run the following command to verify that dbt can connect to your warehouse:
 
