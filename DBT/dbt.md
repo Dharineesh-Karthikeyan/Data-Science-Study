@@ -104,12 +104,12 @@ dbt debug
 
 ## 🗂️ Common `.yml` Files in dbt Projects
 
-| File Name         | Created by Default | Purpose                                                                 |
+| File Name         | Purpose                                                                 |
 |-------------------|--------------------|-------------------------------------------------------------------------|
-| `dbt_project.yml` | ✅ Yes              | Main config: project name, model paths, default materializations       |
-| `profiles.yml`    | ❌ (user-level)     | Stores DB connection settings (in `~/.dbt/`)                            |
-| `schema.yml`      | ❌ (manual)         | Define model tests, column descriptions, relationships, docs           |
-| `packages.yml`    | ❌ (when needed)    | Lists external dbt packages to install (like dbt_utils)                |
+| `dbt_project.yml` | Main config: project name, model paths, default materializations       |
+| `profiles.yml`    | Stores DB connection settings (in `~/.dbt/`)                           |
+| `schema.yml`      | Define model tests, column descriptions, relationships, docs           |
+| `packages.yml`    | Lists external dbt packages to install (like dbt_utils)                |
 
 ### 📌 Tip:
 While `dbt_project.yml` is created automatically inside the project folder, `profiles.yml` lives in the user folder (`~/.dbt/`), and `schema.yml` should be added manually per model folder to maintain modularity and clean testing.
