@@ -4,6 +4,7 @@ This guide covers the **core Python topics** frequently asked in data science in
 
 ---
 
+Defintions: The term 'comprehension' computes a new list of the transformed elements, leaving the original list unchanged
 
 ## ✅ 1. Data Structures & Built-in Types
 
