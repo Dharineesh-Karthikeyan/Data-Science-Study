@@ -327,7 +327,6 @@ Run tests:
 dbt test
 ```
 
----
 
 ### 🧪 Singular Tests (Custom SQL logic)
 
@@ -340,7 +339,6 @@ WHERE amount <= 0
 
 > Test fails if query returns any rows
 
----
 
 ### ✅ Generic vs Singular Test: Comparison
 
@@ -369,7 +367,6 @@ SELECT * FROM {{ ref('stg_orders') }}
 
 > Instead of hardcoding schema.table names, `ref()` keeps it modular and portable.
 
----
 
 ### 🔹 DAG (Directed Acyclic Graph)
 
@@ -382,8 +379,6 @@ dbt docs generate && dbt docs serve
 ```
 
 > DAG ensures upstream models are run before downstream ones.
-
----
 
 ### 🔹 Lineage
 
@@ -402,22 +397,17 @@ dbt docs generate && dbt docs serve
 ### ❓ Q1: What is dbt and why is it useful?
 **Answer**: dbt is a transformation framework that brings modularity, testing, and version control to SQL workflows. It makes analytics engineering reproducible and scalable.
 
----
 
 ### ❓ Q2: What is materialization in dbt?
 **Answer**: It defines how the SQL model is built in the data warehouse — as a `view`, `table`, `incremental` model, or non-persistent `ephemeral`.
 
----
 
 ### ❓ Q3: What's the difference between generic and singular tests?
 **Answer**: Generic tests are reusable YAML-defined constraints. Singular tests are custom SQL queries for more complex logic.
 
----
-
 ### ❓ Q4: How does dbt handle dependencies?
 **Answer**: Via the `ref()` function, which defines the model DAG and ensures correct execution order.
 
----
 
 ### ❓ Q5: What is the use of `dbt run`, `dbt seed`, and `dbt test`?
 **Answer**:
@@ -425,7 +415,6 @@ dbt docs generate && dbt docs serve
 - `dbt seed`: Loads CSV files into tables
 - `dbt test`: Executes defined tests on models
 
----
 
 ### ❓ Q6: What are ephemeral models and when do you use them?
 **Answer**: Ephemeral models are not materialized in the warehouse. They're used as CTEs for intermediate transformations in larger queries.
